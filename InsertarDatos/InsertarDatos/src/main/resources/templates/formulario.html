@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<title>FORM</title>
+<meta charset="utf-8" />
+</head>
+<body>
+<form method="post" th:action="@{/recibir/addperson}" th:object="${person}">
+<p>NOMBRE:<input type="text" th:field="*{nombre}" /></p>
+<!--th:fiel="*{nombre}" le indicamos que es un campo de person-->
+<p>EDAD:<input type="number" th:field="*{edad}" /></p>
+<p> <input type="submit" value="enviar" /> </p>
+</form>
+</body>
+</html>
